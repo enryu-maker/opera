@@ -1,0 +1,15 @@
+ export const  IMAGE = {
+    hat : require('../Image/hat.png'),
+    briefcase : require('../Image/briefcase.png'),
+    trash : require('../Image/trash.png'),
+    padlock : require('../Image/padlock.png'),
+    A: require('../Image/A.jpg'),
+    One: require('../Image/1.png'),
+    hatwhite : require('../Image/hatwhite.png'),
+    briefcasewhite : require('../Image/briefcasewhite.png'),
+    trashwhite : require('../Image/trashwhite.png'),
+    padlockwhite : require('../Image/padlockwhite.png'),
+    london: require('../Image/london.jpeg'),
+    menu: require('../Image/menu.png'),
+    404: require('../Image/404.png'),
+}

@@ -6,8 +6,23 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@font-face {
+  font-family: 'SemiBold';
+  src: local('SemiBold'), url(../src/Screen/Assets/Poppins/Poppins-SemiBold.ttf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Regular';
+    src: local('Regular'), url(../src/Screen/Assets/Poppins/Poppins-Light.ttf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Light';
+    src: local('Light'), url(../src/Screen/Assets/Poppins/Poppins-Light.ttf) format('opentype');
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
