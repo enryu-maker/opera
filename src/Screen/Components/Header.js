@@ -4,7 +4,9 @@ import useMediaQuery from './useMediaQuery'
 import { IMAGE } from './Image'
 import { Link } from 'react-router-dom'
 export default function Header({
-    active
+    active,
+    show,
+    setShow,
 }) {
     const mobile = useMediaQuery('(max-width: 768px)');
 
@@ -28,8 +30,8 @@ export default function Header({
             <img
                 alt='logo'
                 src={IMAGE.One} style={{
-                    width: mobile ? 40 : 65,
-                    height: mobile ? 40 : 65,
+                    width: mobile ? 50 : 65,
+                    height: mobile ? 50 : 65,
                     backgroundColor: COLORS.layout,
                     marginLeft: mobile ? 10 : 20,
                     borderRadius: 32.5,
@@ -38,14 +40,27 @@ export default function Header({
                 }}
             />
             {
-                mobile ? <img
-                    alt='menu'
-                    src={IMAGE.menu} style={{
+                mobile ?
+                    <button style={{
+                        backgroundColor: COLORS.green,
+                        border: 'none',
+                        outline: 'none',
                         width: 35,
                         height: 35,
-                        marginRight: 10,
-                    }}
-                /> :
+                        marginRight: 20,
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                    }}>
+                        <img
+                            alt='menu'
+                            src={show ? IMAGE.close : IMAGE.menu} style={{
+                                width: 40,
+                                height: 40,
+                            }}
+                            onClick={() => {
+                                setShow(!show)
+                            }}
+                        /> </button> :
 
                     <div style={{
                         display: 'flex',

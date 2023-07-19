@@ -5,8 +5,10 @@ import useMediaQuery from './Components/useMediaQuery';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
 import { Link } from 'react-router-dom';
+import Menu from './Components/Menu';
 export default function Service() {
     const mobile = useMediaQuery('(max-width: 768px)');
+    const [show, setShow] = React.useState(false);
     return (
         <div style={{
             display: "flex",
@@ -18,7 +20,15 @@ export default function Service() {
         >
             <Header
             active={"service"}
+            show={show}
+            setShow={setShow}
             />
+            {
+                !mobile ? null :
+                    <Menu isOpen={show}
+                        active={"service"}
+                    />
+            }
             <div style={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -98,21 +108,20 @@ export default function Service() {
                 justifyContent: 'space-evenly',
                 width: '100%',
                 backgroundColor: COLORS.green,
-                padding: 20,
             }}>
                 <div style={{
                     display: 'flex',
                     flexDirection: mobile ? 'column' : 'row',
                     justifyContent: 'space-around',
                     width: '100%',
-                    marginLeft: mobile ? 20 : 0,
                 }}>
                     <div style={{
                         display: 'flex',
                         flexDirection: 'column',
                         justifyContent: 'space-evenly',
                         alignItems: 'flex-start',
-                        width: mobile ? "90%" : "25%",
+                        paddingInline: mobile? 10:0,
+                        width: mobile ? "" : "25%",
                     }}>
                         <img 
                         alt='construction'
@@ -142,14 +151,15 @@ export default function Service() {
                         flexDirection: 'column',
                         justifyContent: 'space-evenly',
                         alignItems: 'flex-start',
-                        width: mobile ? "90%" : "25%",
+                        paddingInline: mobile? 10:0,
+                        width: mobile ? "" : "25%",
+
                     }}>
                         <img 
                         alt='breifcase'
                         src={IMAGE.briefcasewhite} style={{
                             width: mobile ? 120 : 180,
                             height: mobile ? 120 : 180,
-                            padding: 10,
                         }}
                         />
                         <p style={{
@@ -174,21 +184,21 @@ export default function Service() {
                     flexDirection: mobile ? 'column' : 'row',
                     justifyContent: 'space-around',
                     width: '100%',
-                    marginLeft: mobile ? 20 : 0,
+                    // marginLeft: mobile ? 20 : 0,
                 }}>
                     <div style={{
                         display: 'flex',
                         flexDirection: 'column',
                         justifyContent: 'space-evenly',
                         alignItems: 'flex-start',
-                        width: mobile ? "90%" : "25%",
+                        paddingInline: mobile? 10:0,
+                        width: mobile ? "" : "25%",
                     }}>
                         <img 
                         alt='padlock'
                         src={IMAGE.padlockwhite} style={{
                             width: mobile ? 120 : 180,
                             height: mobile ? 120 : 180,
-                            padding: 10,
                         }}
                         />
                         <p style={{
@@ -212,14 +222,14 @@ export default function Service() {
                         flexDirection: 'column',
                         justifyContent: 'space-evenly',
                         alignItems: 'flex-start',
-                        width: mobile ? "90%" : "25%",
+                        paddingInline: mobile? 10:0,
+                        width: mobile ? "" : "25%",
                     }}>
                         <img 
                         alt='trash'
                         src={IMAGE.trashwhite} style={{
                             width: mobile ? 120 : 180,
                             height: mobile ? 120 : 180,
-                            padding: 10,
                         }}
                         />
                         <p style={{

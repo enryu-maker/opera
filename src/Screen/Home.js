@@ -5,9 +5,10 @@ import useMediaQuery from './Components/useMediaQuery';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
 import { Link } from 'react-router-dom';
+import Menu from './Components/Menu';
 export default function Home() {
     const mobile = useMediaQuery('(max-width: 768px)');
-
+    const [show, setShow] = React.useState(false);
     return (
         <div style={{
             display: "flex",
@@ -19,7 +20,15 @@ export default function Home() {
         >
             <Header
                 active={"home"}
+                show={show}
+                setShow={setShow}
             />
+            {
+                !mobile ? null :
+                    <Menu isOpen={show}
+                        active={"home"}
+                    />
+            }
             <div style={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -64,7 +73,7 @@ export default function Home() {
                         width: '60%',
                         marginBlock: 0
                     }}>
-                    We will offer you exceptional services, outstanding support and superb resources. We have worked with various clients to help themilcomplete numerous prestigious projects
+                    We will offer you exceptional services, outstanding support and superb resources. We have worked with various clients to help them complete numerous prestigious projects
                 </p>
                 <Link style={{
                     display: 'flex',
@@ -77,7 +86,7 @@ export default function Home() {
                     cursor: 'pointer',
                     textDecoration: 'none',
                 }}
-                to={'/enquire'}
+                    to={'/enquire'}
                 >
                     <p
                         style={

@@ -5,8 +5,10 @@ import useMediaQuery from './Components/useMediaQuery';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
 import { Link } from 'react-router-dom';
+import Menu from './Components/Menu';
 export default function Contact() {
     const mobile = useMediaQuery('(max-width: 768px)');
+    const [show, setShow] = React.useState(false);
     return (
         <div style={{
             display: "flex",
@@ -16,7 +18,17 @@ export default function Contact() {
             backgroundColor: COLORS.layout,
         }}
         >
-            <Header active={"contact"} />
+            <Header active={"contact"}
+                show={show}
+                setShow={setShow}
+            />
+
+            {
+                !mobile ? null :
+                    <Menu isOpen={show}
+                        active={"contact"}
+                    />
+            }
             <div style={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -298,6 +310,7 @@ export default function Contact() {
             </div>
 
             <iframe
+                title="map"
                 src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.959919693171!2d77.5690578751413!3d12.910297616219253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15905c4c0d9f%3A0x7a97c545423135cf!2sOpera%20group!5e0!3m2!1sen!2sin!4v1689749606521!5m2!1sen!2sin'
                 width="90%"
                 height={mobile ? "500" : "550"}

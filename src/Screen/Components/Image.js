@@ -19,4 +19,6 @@
     linkedin: require('../Image/linkedin.png'),
     twitter: require('../Image/twitter.png'),
     placeholder: require('../Image/placeholder.png'),
+    close: require('../Image/close.png'),
+    contact: require('../Image/contact.png'),
 }

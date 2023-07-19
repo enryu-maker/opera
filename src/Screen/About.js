@@ -4,9 +4,10 @@ import Header from './Components/Header'
 import { IMAGE } from './Components/Image'
 import useMediaQuery from './Components/useMediaQuery'
 import Footer from './Components/Footer'
+import Menu from './Components/Menu'
 export default function About() {
     const mobile = useMediaQuery('(max-width: 768px)');
-
+    const [show, setShow] = React.useState(false);
     return (
         <div style={{
             display: "flex",
@@ -15,7 +16,16 @@ export default function About() {
             alignItems: "center",
             backgroundColor: COLORS.layout,
         }}>
-            <Header active={"about"} />
+            <Header active={"about"}
+                show={show}
+                setShow={setShow}
+            />
+            {
+                !mobile ? null :
+                    <Menu isOpen={show}
+                        active={"about"}
+                    />
+            }
             <div style={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -45,7 +55,7 @@ export default function About() {
                 </p>
 
             </div>
-            <Footer/>
+            <Footer />
         </div>
     )
 }
