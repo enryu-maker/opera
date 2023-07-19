@@ -5,6 +5,7 @@ import useMediaQuery from './Components/useMediaQuery'
 import Menu from './Components/Menu'
 import { IMAGE } from './Components/Image'
 import { Triangle } from 'react-loader-spinner'
+import Footer from './Components/Footer'
 export default function Enquiry() {
   const mobile = useMediaQuery('(max-width: 768px)')
   const [show, setShow] = React.useState(false)
@@ -57,8 +58,8 @@ export default function Enquiry() {
       display: "flex",
       flexDirection: "column",
       justifyContent: "center",
-      height: '100vh',
-      width: '100vw',
+      height: mobile ? '100vh' : "",
+      width: mobile ? '100vw' : "",
       alignItems: "center",
       backgroundColor: COLORS.layout,
     }}>
@@ -75,14 +76,13 @@ export default function Enquiry() {
         display: 'flex',
         flexDirection: mobile ? "column" : 'row',
         width: '100vw',
-        justifyContent: 'space-around',
+        justifyContent: 'space-evenly',
         alignItems: 'center',
-        marginTop: 50,
+        marginBlockStart: mobile ? "450px" : 100,
       }}
       >
         <img src={IMAGE.contact} alt='contact' style={{
           width: mobile ? "100%" : "",
-          marginTop: mobile ? 350 : 0,
           objectFit: 'contain',
         }}
         />
@@ -99,13 +99,13 @@ export default function Enquiry() {
         >
           <p
             style={{
-              color: COLORS.green,
+              color: COLORS.darkGray,
               textAlign: "center",
               ...FONTS.h1,
               letterSpacing: "2px",
             }}
           >
-            Contact Now
+            REQUEST A CALLBACK
           </p>
           <p
             style={{
@@ -113,7 +113,7 @@ export default function Enquiry() {
               textAlign: "center",
               ...FONTS.h3,
               letterSpacing: "2px",
-              width:mobile?"90%":400,
+              width: mobile ? "90%" : 400,
             }}
           >
             {msg}
@@ -125,7 +125,7 @@ export default function Enquiry() {
               ...FONTS.h3,
               letterSpacing: "2px",
               marginBlock: 0,
-              width:mobile?"90%":400,
+              width: mobile ? "90%" : 400,
             }}
           >
             Full Name*
@@ -133,11 +133,13 @@ export default function Enquiry() {
           <input
             style={{
               height: 50,
-              width:mobile?"90%":400,
+              width: mobile ? "90%" : 400,
               borderRadius: 10,
               border: "none",
               ...FONTS.body3,
               paddingLeft: 20,
+              outline: "none",
+
             }}
             placeholder="John Doe"
             onChange={(e) => {
@@ -154,7 +156,7 @@ export default function Enquiry() {
               letterSpacing: "2px",
               marginBlock: 0,
               marginTop: 20,
-              width:mobile?"90%":400,
+              width: mobile ? "90%" : 400,
             }}
           >
             Email*
@@ -162,11 +164,12 @@ export default function Enquiry() {
           <input
             style={{
               height: 50,
-              width:mobile?"90%":400,
+              width: mobile ? "90%" : 400,
               borderRadius: 10,
               border: "none",
               ...FONTS.body3,
               paddingLeft: 20,
+              outline: "none",
             }}
             onChange={(e) => {
               setEmail(e.target.value);
@@ -183,7 +186,7 @@ export default function Enquiry() {
               letterSpacing: "2px",
               marginBlock: 0,
               marginTop: 20,
-              width:mobile?"90%":400,
+              width: mobile ? "90%" : 400,
             }}
           >
             Phone*
@@ -191,11 +194,13 @@ export default function Enquiry() {
           <input
             style={{
               height: 50,
-              width:mobile?"90%":400,
+              width: mobile ? "90%" : 400,
               borderRadius: 10,
               border: "none",
               ...FONTS.body3,
               paddingLeft: 20,
+              outline: "none",
+
             }}
             onChange={(e) => {
               setPhone(e.target.value);
@@ -212,7 +217,7 @@ export default function Enquiry() {
               letterSpacing: "2px",
               marginBlock: 0,
               marginTop: 20,
-              width:mobile?"90%":400,
+              width: mobile ? "90%" : 400,
             }}
           >
             Message*
@@ -220,11 +225,13 @@ export default function Enquiry() {
           <textarea
             style={{
               height: 120,
-              width:mobile?"90%":400,
+              width: mobile ? "90%" : 400,
               borderRadius: 10,
               border: "none",
               ...FONTS.body3,
               paddingLeft: 20,
+              outline: "none",
+
             }}
             onChange={(e) => {
               setMessage(e.target.value);
@@ -242,7 +249,7 @@ export default function Enquiry() {
               marginBlock: "30px",
               fontWeight: "bold",
               borderRadius: "10px",
-              width:mobile?"90%":200,
+              width: mobile ? "90%" : 200,
               height: "50px",
               border: "none",
             }}
@@ -269,12 +276,13 @@ export default function Enquiry() {
                   letterSpacing: "2px",
                 }}
               >
-                Submit
+                SUBMIT
               </p>
             )}
           </button>
         </div>
       </div>
+      <Footer show={false} />
     </div>
   )
 }

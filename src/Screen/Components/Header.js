@@ -27,26 +27,31 @@ export default function Header({
             zIndex: 1030,
 
         }}>
-            <img
-                alt='logo'
-                src={IMAGE.One} style={{
-                    width: mobile ? 50 : 65,
-                    height: mobile ? 50 : 65,
-                    backgroundColor: COLORS.layout,
-                    marginLeft: mobile ? 10 : 20,
-                    borderRadius: 32.5,
-                    objectFit: "fill",
-
-                }}
-            />
+            
+                <Link to="/" style={{
+                    textDecoration: 'none',
+                    display: 'flex',
+                    flexDirection: 'row',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                }}>
+                    <img
+                        alt='logo'
+                        src={IMAGE.One} style={{
+                            width: mobile ? 55 : 70,
+                            height: mobile ? 55 : 70,
+                            marginLeft: mobile ? 10 : 20,
+                        }}
+                    />
+                </Link>
             {
                 mobile ?
                     <button style={{
                         backgroundColor: COLORS.green,
                         border: 'none',
                         outline: 'none',
-                        width: 35,
-                        height: 35,
+                        width: 50,
+                        height: 50,
                         marginRight: 20,
                         justifyContent: 'center',
                         alignItems: 'center',

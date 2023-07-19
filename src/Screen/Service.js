@@ -19,9 +19,9 @@ export default function Service() {
         }}
         >
             <Header
-            active={"service"}
-            show={show}
-            setShow={setShow}
+                active={"service"}
+                show={show}
+                setShow={setShow}
             />
             {
                 !mobile ? null :
@@ -68,7 +68,7 @@ export default function Service() {
                     cursor: 'pointer',
                     textDecoration: 'none',
                 }}
-                to={'/enquire'}
+                    to={'/enquire'}
                 >
                     <p
                         style={
@@ -85,7 +85,8 @@ export default function Service() {
                                     textAlign: 'center',
                                     letterSpacing: 2,
                                 }}>
-                        Enquire Now
+                        ENQUIRE NOW
+
                     </p>
                 </Link>
             </div>
@@ -120,15 +121,15 @@ export default function Service() {
                         flexDirection: 'column',
                         justifyContent: 'space-evenly',
                         alignItems: 'flex-start',
-                        paddingInline: mobile? 10:0,
+                        paddingInline: mobile ? 10 : 0,
                         width: mobile ? "" : "25%",
                     }}>
-                        <img 
-                        alt='construction'
-                        src={IMAGE.hatwhite} style={{
-                            width: mobile ? 120 : 180,
-                            height: mobile ? 120 : 180,
-                        }}
+                        <img
+                            alt='construction'
+                            src={IMAGE.hatwhite} style={{
+                                width: mobile ? 120 : 180,
+                                height: mobile ? 120 : 180,
+                            }}
                         />
                         <p style={{
                             ...FONTS.h2,
@@ -151,16 +152,16 @@ export default function Service() {
                         flexDirection: 'column',
                         justifyContent: 'space-evenly',
                         alignItems: 'flex-start',
-                        paddingInline: mobile? 10:0,
+                        paddingInline: mobile ? 10 : 0,
                         width: mobile ? "" : "25%",
 
                     }}>
-                        <img 
-                        alt='breifcase'
-                        src={IMAGE.briefcasewhite} style={{
-                            width: mobile ? 120 : 180,
-                            height: mobile ? 120 : 180,
-                        }}
+                        <img
+                            alt='breifcase'
+                            src={IMAGE.briefcasewhite} style={{
+                                width: mobile ? 120 : 180,
+                                height: mobile ? 120 : 180,
+                            }}
                         />
                         <p style={{
                             ...FONTS.h2,
@@ -191,15 +192,15 @@ export default function Service() {
                         flexDirection: 'column',
                         justifyContent: 'space-evenly',
                         alignItems: 'flex-start',
-                        paddingInline: mobile? 10:0,
+                        paddingInline: mobile ? 10 : 0,
                         width: mobile ? "" : "25%",
                     }}>
-                        <img 
-                        alt='padlock'
-                        src={IMAGE.padlockwhite} style={{
-                            width: mobile ? 120 : 180,
-                            height: mobile ? 120 : 180,
-                        }}
+                        <img
+                            alt='padlock'
+                            src={IMAGE.padlockwhite} style={{
+                                width: mobile ? 120 : 180,
+                                height: mobile ? 120 : 180,
+                            }}
                         />
                         <p style={{
                             ...FONTS.h2,
@@ -222,15 +223,15 @@ export default function Service() {
                         flexDirection: 'column',
                         justifyContent: 'space-evenly',
                         alignItems: 'flex-start',
-                        paddingInline: mobile? 10:0,
+                        paddingInline: mobile ? 10 : 0,
                         width: mobile ? "" : "25%",
                     }}>
-                        <img 
-                        alt='trash'
-                        src={IMAGE.trashwhite} style={{
-                            width: mobile ? 120 : 180,
-                            height: mobile ? 120 : 180,
-                        }}
+                        <img
+                            alt='trash'
+                            src={IMAGE.trashwhite} style={{
+                                width: mobile ? 120 : 180,
+                                height: mobile ? 120 : 180,
+                            }}
                         />
                         <p style={{
                             ...FONTS.h2,

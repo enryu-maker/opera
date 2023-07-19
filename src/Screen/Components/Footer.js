@@ -1,10 +1,15 @@
 import React from 'react'
 import { COLORS, FONTS } from './Theme'
 import useMediaQuery from './useMediaQuery'
-export default function Footer() {
+export default function Footer({
+    show=true,
+}) {
     const mobile = useMediaQuery('(max-width: 768px)');
     return (
         <>
+        {
+            show?
+        
         <div style={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -13,6 +18,8 @@ export default function Footer() {
                 height: mobile ? 80 : 100,
                 backgroundColor: COLORS.layout,
             }} />
+            :null
+        }
         <div
             style={{
                 display: 'flex',
@@ -20,7 +27,7 @@ export default function Footer() {
                 alignItems: 'center',
                 justifyContent: 'center',
                 backgroundColor: COLORS.green,
-                height: 80,
+                height:mobile? 50:80,
                 width: '100%',
             }}
         >

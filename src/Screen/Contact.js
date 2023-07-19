@@ -86,7 +86,7 @@ export default function Contact() {
                                     textAlign: 'center',
                                     letterSpacing: 2,
                                 }}>
-                        Enquire Now
+                        ENQUIRE NOW
                     </p>
                 </Link>
             </div>
