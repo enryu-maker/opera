@@ -4,6 +4,7 @@ import { IMAGE } from './Components/Image'
 import useMediaQuery from './Components/useMediaQuery';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
+import { Link } from 'react-router-dom';
 export default function Service() {
     const mobile = useMediaQuery('(max-width: 768px)');
     return (
@@ -46,7 +47,7 @@ export default function Service() {
                         }}>
                     OUR SERVICES
                 </p>
-                <div style={{
+                <Link style={{
                     display: 'flex',
                     justifyContent: 'flex-end',
                     alignItems: 'flex-end',
@@ -54,7 +55,11 @@ export default function Service() {
                     opacity: 0.8,
                     paddingInline: 10,
                     marginBlock: 20,
-                }}>
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                }}
+                to={'/enquire'}
+                >
                     <p
                         style={
                             mobile ? {
@@ -72,7 +77,7 @@ export default function Service() {
                                 }}>
                         Enquire Now
                     </p>
-                </div>
+                </Link>
             </div>
             <div style={{
                 width: mobile ? "90%" : "80%",

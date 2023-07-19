@@ -6,6 +6,10 @@ import Contact from './Screen/Contact'
 import { Routes, Route } from "react-router-dom";
 import { Triangle } from 'react-loader-spinner'
 import { COLORS } from './Screen/Components/Theme'
+import Enquiry from './Screen/Enquiry'
+import About from './Screen/About'
+import Projects from './Screen/Projects'
+import './App.css'
 export default function App() {
   const [loading, setLoading] = React.useState(true)
   React.useEffect(() => {
@@ -41,7 +45,11 @@ export default function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="service" element={<Service />} />
         <Route path='Contact' element={<Contact />} />
+        <Route path='enquire' element={<Enquiry/>} />
+        <Route path='about' element={<About/>} />
+        <Route path='project' element={<Projects/>} />
         <Route path='*' element={<ErrorPage />} />
+
       </Routes>
     )
   }

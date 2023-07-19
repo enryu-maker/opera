@@ -31,7 +31,6 @@ export default function Header({
                     width: mobile ? 40 : 65,
                     height: mobile ? 40 : 65,
                     backgroundColor: COLORS.layout,
-                    padding: 2,
                     marginLeft: mobile ? 10 : 20,
                     borderRadius: 32.5,
                     objectFit: "fill",

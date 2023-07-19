@@ -12,4 +12,11 @@
     london: require('../Image/london.jpeg'),
     menu: require('../Image/menu.png'),
     404: require('../Image/404.png'),
+    phone: require('../Image/phone.png'),
+    open: require('../Image/open.png'),
+    facebook: require('../Image/facebook.png'),
+    instagram: require('../Image/instagram.png'),
+    linkedin: require('../Image/linkedin.png'),
+    twitter: require('../Image/twitter.png'),
+    placeholder: require('../Image/placeholder.png'),
 }

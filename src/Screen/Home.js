@@ -4,6 +4,7 @@ import { IMAGE } from './Components/Image'
 import useMediaQuery from './Components/useMediaQuery';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
+import { Link } from 'react-router-dom';
 export default function Home() {
     const mobile = useMediaQuery('(max-width: 768px)');
 
@@ -65,15 +66,19 @@ export default function Home() {
                     }}>
                     We will offer you exceptional services, outstanding support and superb resources. We have worked with various clients to help themilcomplete numerous prestigious projects
                 </p>
-                <div style={{
+                <Link style={{
                     display: 'flex',
                     justifyContent: 'flex-end',
                     alignItems: 'flex-end',
                     backgroundColor: COLORS.black,
-                    opacity: 0.7,
+                    opacity: 0.8,
                     paddingInline: 10,
                     marginBlock: 20,
-                }}>
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                }}
+                to={'/enquire'}
+                >
                     <p
                         style={
                             mobile ? {
@@ -91,7 +96,7 @@ export default function Home() {
                                 }}>
                         Enquire Now
                     </p>
-                </div>
+                </Link>
             </div>
             <p style={{
                 ...FONTS.largeTitle,

@@ -1,6 +1,6 @@
 *{
   -ms-overflow-style: none;
-  transition: .3s ease-in-out;
+  transition: .2s ease;
 }
 ::-webkit-scrollbar {
   display: none;
