@@ -143,7 +143,7 @@ export default function Home() {
                         color: COLORS.darkGray,
 
                     }}>
-                        CONSTRUCTION
+                        DEVELOPERS
                     </p>
                 </a>
                 <a style={{
@@ -157,7 +157,7 @@ export default function Home() {
                 >
                     <img
                         alt='briefcase'
-                        src={IMAGE.briefcase} style={{
+                        src={IMAGE.trash} style={{
                             width: 100,
                             height: 100,
                         }} />
@@ -165,7 +165,7 @@ export default function Home() {
                         ...FONTS.h2,
                         color: COLORS.darkGray,
                     }}>
-                        PRINCIPAL CONTRACTING
+                        CONSTRUCTION
                     </p>
                 </a>
                 <a style={{
@@ -188,7 +188,7 @@ export default function Home() {
                         ...FONTS.h2,
                         color: COLORS.darkGray,
                     }}>
-                        SECURITY
+                        INTERIOR DESIGN
                     </p>
                 </a>
                 <a style={{
@@ -201,7 +201,7 @@ export default function Home() {
                 >
                     <img
                         alt='trash'
-                        src={IMAGE.trash} style={{
+                        src={IMAGE.briefcase} style={{
                             width: 100,
                             height: 100,
                         }} />
@@ -209,7 +209,7 @@ export default function Home() {
                         ...FONTS.h2,
                         color: COLORS.darkGray,
                     }}>
-                        WASTE MANAGEMENT
+                        BASKET PLUS
                     </p>
                 </a>
             </div>

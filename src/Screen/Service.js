@@ -109,6 +109,7 @@ export default function Service() {
                 justifyContent: 'space-evenly',
                 width: '100%',
                 backgroundColor: COLORS.green,
+                paddingBlock: 30,
             }}>
                 <div style={{
                     display: 'flex',
@@ -137,7 +138,7 @@ export default function Service() {
                             textAlign: 'flex-start',
                             letterSpacing: 2,
                         }}>
-                            CONSTRUCTION
+                            DEVELOPERS
                         </p>
                         <p style={{
                             ...FONTS.body3,
@@ -158,7 +159,7 @@ export default function Service() {
                     }}>
                         <img
                             alt='breifcase'
-                            src={IMAGE.briefcasewhite} style={{
+                            src={IMAGE.trashwhite} style={{
                                 width: mobile ? 120 : 180,
                                 height: mobile ? 120 : 180,
                             }}
@@ -169,7 +170,7 @@ export default function Service() {
                             textAlign: 'flex-start',
                             letterSpacing: 2,
                         }}>
-                            PRINCIPAL CONTRACTING
+                            CONSTRUCTION
                         </p>
                         <p style={{
                             ...FONTS.body3,
@@ -208,7 +209,7 @@ export default function Service() {
                             textAlign: 'center',
                             letterSpacing: 2,
                         }}>
-                            SECURITY
+                            INTERIOR DESIGN
                         </p>
                         <p style={{
                             ...FONTS.body3,
@@ -228,7 +229,7 @@ export default function Service() {
                     }}>
                         <img
                             alt='trash'
-                            src={IMAGE.trashwhite} style={{
+                            src={IMAGE.briefcasewhite} style={{
                                 width: mobile ? 120 : 180,
                                 height: mobile ? 120 : 180,
                             }}
@@ -239,7 +240,7 @@ export default function Service() {
                             textAlign: 'center',
                             letterSpacing: 2,
                         }}>
-                            TRASH MANAGEMENT
+                            BASKET PLUS
                         </p>
                         <p style={{
                             ...FONTS.body3,
