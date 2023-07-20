@@ -65,8 +65,8 @@ export default function Projects() {
                     textAlign: 'center',
                     letterSpacing: 2,
                 }}>
-                   Over the course of 40 years Opera Group have been involved in the delivery of a multitude of high profile developments around the UK. These include government buildings, hospitals, residential developments, commercial offices, prisons, retail, galleries and sporting complexes which have rewarded us with a wealth of experience and knowledge. Find out more below, some of our most recent projects.
-                   </p>
+                    Over the course of 40 years Opera Group have been involved in the delivery of a multitude of high profile developments around the UK. These include government buildings, hospitals, residential developments, commercial offices, prisons, retail, galleries and sporting complexes which have rewarded us with a wealth of experience and knowledge. Find out more below, some of our most recent projects.
+                </p>
             </div>
             <Footer />
         </div>
