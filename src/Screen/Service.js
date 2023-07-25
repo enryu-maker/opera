@@ -40,6 +40,8 @@ export default function Service() {
                 backgroundBlendMode: "darken",
                 justifyContent: 'center',
                 alignItems: 'center',
+                marginBlockStart: mobile ? 60 : 140,
+
             }}
             >
                 <p style={
@@ -92,12 +94,12 @@ export default function Service() {
             </div>
             <div style={{
                 width: mobile ? "90%" : "80%",
-                marginBlock: 100
+                marginBlock:mobile?20 : 80,
             }}>
                 <p style={{
                     ...FONTS.body3,
                     color: COLORS.black,
-                    textAlign: 'center',
+                    textAlign:mobile?"left" : 'center',
                     letterSpacing: 2,
                 }}>
                     We are a one stop shop for construction support services and can tailor these services to meet your requirement and budget. Please see below for the full suite of services we can provide.
@@ -138,15 +140,14 @@ export default function Service() {
                             textAlign: 'flex-start',
                             letterSpacing: 2,
                         }}>
-                            DEVELOPERS
+                            DEVELOPERS PLUS
                         </p>
                         <p style={{
                             ...FONTS.body3,
                             color: COLORS.white,
                             letterSpacing: 2,
                         }}>
-                            We are a one stop shop for construction support services and can tailor these services to meet your requirement and budget. Please see below for the full suite of services we can provide.
-                        </p>
+                            Our team of dedicated and experienced real estate professionals is committed to guiding you through every step of your real estate journey. Whether you are a first-time homebuyer, an experienced investor, or looking to sell your property, we are here to provide personalized attention and tailor-made strategies to meet your unique needs and goals. </p>
                     </div>
                     <div style={{
                         display: 'flex',
@@ -170,15 +171,14 @@ export default function Service() {
                             textAlign: 'flex-start',
                             letterSpacing: 2,
                         }}>
-                            CONSTRUCTION
+                            CONSTRUCTION PLUS
                         </p>
                         <p style={{
                             ...FONTS.body3,
                             color: COLORS.white,
                             letterSpacing: 2,
                         }}>
-                            We are a one stop shop for construction support services and can tailor these services to meet your requirement and budget. Please see below for the full suite of services we can provide.
-                        </p>
+                            From the ground up, we have the expertise and experience to handle all aspects of construction projects. Whether it's residential, commercial, or industrial construction, we combine innovation, quality materials, and skilled craftsmanship to create spaces that stand the test of time. Our team of professionals ensures each project is executed with precision, attention to detail, and adherence to safety standards. </p>
                     </div>
                 </div>
                 <div style={{
@@ -209,15 +209,14 @@ export default function Service() {
                             textAlign: 'center',
                             letterSpacing: 2,
                         }}>
-                            INTERIOR DESIGN
+                            INTERIOR PLUS
                         </p>
                         <p style={{
                             ...FONTS.body3,
                             color: COLORS.white,
                             letterSpacing: 2,
                         }}>
-                            We are a one stop shop for construction support services and can tailor these services to meet your requirement and budget. Please see below for the full suite of services we can provide.
-                        </p>
+                            Our interior design services are tailored to reflect your unique style and preferences. We believe that a well-designed interior can significantly enhance the functionality and aesthetics of any space. Our team of talented designers will collaborate with you to curate a design that complements your lifestyle, maximizes space utilization, and brings your dream interior to life. </p>
                     </div>
                     <div style={{
                         display: 'flex',
@@ -240,15 +239,14 @@ export default function Service() {
                             textAlign: 'center',
                             letterSpacing: 2,
                         }}>
-                            BASKET PLUS
+                            PAINTING PLUS
                         </p>
                         <p style={{
                             ...FONTS.body3,
                             color: COLORS.white,
                             letterSpacing: 2,
                         }}>
-                            We are a one stop shop for construction support services and can tailor these services to meet your requirement and budget. Please see below for the full suite of services we can provide.
-                        </p>
+                            A fresh coat of paint can breathe new life into any property. Whether it's a single room or an entire building, our skilled painters are equipped to handle all types of painting projects. We use high-quality paints and modern techniques to ensure a flawless finish that not only looks stunning but also stands the test of time.</p>
                     </div>
                 </div>
 

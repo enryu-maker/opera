@@ -20,7 +20,10 @@ body {
     font-family: 'Light';
     src: local('Light'), url(../src/Screen/Assets/Poppins/Poppins-Light.ttf) format('opentype');
 }
-
+@font-face {
+  font-family: 'Tektur-SemiBold';
+  src: local('Tektur-SemiBold'), url(../src/Screen/Assets/Poppins/Tektur-SemiBold.ttf) format('opentype');
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

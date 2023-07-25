@@ -57,7 +57,7 @@ export default function Enquiry() {
     <div style={{
       display: "flex",
       flexDirection: "column",
-      justifyContent: "center",
+      // justifyContent: "center",
       height: mobile ? '100vh' : "",
       width: mobile ? '100vw' : "",
       alignItems: "center",
@@ -78,7 +78,7 @@ export default function Enquiry() {
         width: '100vw',
         justifyContent: 'space-evenly',
         alignItems: 'center',
-        marginBlockStart: mobile ? "450px" : 100,
+        marginBlockStart: mobile ? 60 : 140,
       }}
       >
         <img src={IMAGE.contact} alt='contact' style={{

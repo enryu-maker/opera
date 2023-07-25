@@ -27,8 +27,9 @@ export default function ErrorPage() {
       alt='404'
       src={IMAGE[404]}
         style={{
-          width: mobile?"100%":'80%',
-          height:  mobile?"40%":'80%',
+          width: mobile?"100%":'100%',
+          height:  mobile?"100%":'100%',
+          objectFit: 'contain',
         }}
       />      
     </div>

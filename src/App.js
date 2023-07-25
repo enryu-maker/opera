@@ -49,7 +49,6 @@ export default function App() {
         <Route path='about' element={<About/>} />
         <Route path='project' element={<Projects/>} />
         <Route path='*' element={<ErrorPage />} />
-
       </Routes>
     )
   }

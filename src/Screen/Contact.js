@@ -40,6 +40,7 @@ export default function Contact() {
                 backgroundBlendMode: "darken",
                 justifyContent: 'center',
                 alignItems: 'center',
+                marginBlockStart: mobile ? 60 : 140,
             }}
             >
 

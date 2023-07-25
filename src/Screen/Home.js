@@ -5,10 +5,27 @@ import useMediaQuery from './Components/useMediaQuery';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
 import { Link } from 'react-router-dom';
-import Menu from './Components/Menu';
+import FlatList from 'flatlist-react';
+import ProjectCard from './Components/ProjectCard';
 export default function Home() {
     const mobile = useMediaQuery('(max-width: 768px)');
-    const [show, setShow] = React.useState(false);
+    const data = [
+        {
+            image: IMAGE.A,
+            name: "Opera House",
+            description: "sample description"
+        },
+        {
+            image: IMAGE.A,
+            name: "Opera House",
+            description: "sample description"
+        },
+        {
+            image: IMAGE.A,
+            name: "Opera House",
+            description: "sample description"
+        },
+    ]
     return (
         <div style={{
             display: "flex",
@@ -20,15 +37,8 @@ export default function Home() {
         >
             <Header
                 active={"home"}
-                show={show}
-                setShow={setShow}
             />
-            {
-                !mobile ? null :
-                    <Menu isOpen={show}
-                        active={"home"}
-                    />
-            }
+            
             <div style={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -39,6 +49,7 @@ export default function Home() {
                 backgroundBlendMode: "darken",
                 justifyContent: 'center',
                 alignItems: 'center',
+                marginBlockStart: mobile ? 60 : 140,
             }}
             >
 
@@ -108,8 +119,9 @@ export default function Home() {
                     </p>
                 </Link>
             </div>
+            
             <p style={{
-                ...FONTS.largeTitle,
+                ...FONTS.h1,
                 color: COLORS.darkGray,
                 textAlign: 'center',
                 letterSpacing: 2,
@@ -143,7 +155,7 @@ export default function Home() {
                         color: COLORS.darkGray,
 
                     }}>
-                        DEVELOPERS
+                        DEVELOPERS PLUS
                     </p>
                 </a>
                 <a style={{
@@ -165,7 +177,7 @@ export default function Home() {
                         ...FONTS.h2,
                         color: COLORS.darkGray,
                     }}>
-                        CONSTRUCTION
+                        CONSTRUCTION PLUS
                     </p>
                 </a>
                 <a style={{
@@ -188,7 +200,7 @@ export default function Home() {
                         ...FONTS.h2,
                         color: COLORS.darkGray,
                     }}>
-                        INTERIOR DESIGN
+                        INTERIOR PLUS
                     </p>
                 </a>
                 <a style={{
@@ -209,7 +221,7 @@ export default function Home() {
                         ...FONTS.h2,
                         color: COLORS.darkGray,
                     }}>
-                        BASKET PLUS
+                        PAINTING PLUS
                     </p>
                 </a>
             </div>
@@ -219,7 +231,7 @@ export default function Home() {
                 <p style={{
                     ...FONTS.body3,
                     color: COLORS.black,
-                    textAlign: 'center',
+                    textAlign:mobile?"left" : 'center',
                     letterSpacing: 2,
                 }}>
                     Thank you for visiting our website which we hope you enjoy. You may want to gain new insights to a specific project or wish to review our contracting capability. There is an excellent chance that you will find what you need right here, however if you require any further information please feel free to pick up the phone and our skilled and experienced staff members will help.
@@ -227,7 +239,7 @@ export default function Home() {
                 <p style={{
                     ...FONTS.body3,
                     color: COLORS.black,
-                    textAlign: 'center',
+                    textAlign:mobile?"left" : 'center',
                     letterSpacing: 2,
                 }}>
                     For those reviewing this website as potential employees – do you want the opportunity to be part of our success? Browse through our pages, meet the team and search the recruitment page to see our current vacancies. You will find a wealth of information about the services we provide, ongoing and completed contracts.
@@ -235,7 +247,7 @@ export default function Home() {
                 <p style={{
                     ...FONTS.body3,
                     color: COLORS.black,
-                    textAlign: 'center',
+                    textAlign:mobile?"left" : 'center',
                     letterSpacing: 2,
                 }}>
                     Take the first step and get in touch, we'd love to hear from you!
@@ -243,19 +255,41 @@ export default function Home() {
             </div>
             <div style={{
                 display: 'flex',
-                flexDirection: 'row',
+                flexDirection: 'column',
                 justifyContent: 'space-evenly',
                 width: '100%',
             }}>
                 <p style={{
-                    ...FONTS.largeTitle,
+                    ...FONTS.h1,
                     color: COLORS.darkGray,
                     textAlign: 'center',
                     letterSpacing: 2,
                 }}>
                     PROJECTS
                 </p>
+                <div style={{
+                    display: 'flex',
+                    flexDirection:mobile?'column' : 'row',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    width: '100%',
+                    height: '100%',
+                    flexWrap: 'wrap',
 
+                }}>
+                    <FlatList
+                        list={data}
+                        rowGap='10px'
+                        renderItem={(item, index) => (
+                            <ProjectCard
+                                image={item.image}
+                                name={item.name}
+                                description={item.description}
+                            />
+                        )}
+                        renderWhenEmpty={() => <div>List is empty!</div>}
+                    />
+                </div>
 
             </div>
             <div style={{
@@ -267,7 +301,7 @@ export default function Home() {
                 height: 500,
             }}>
                 <p style={{
-                    ...FONTS.largeTitle,
+                    ...FONTS.h1,
                     color: COLORS.white,
                     textAlign: 'center',
                     letterSpacing: 2,

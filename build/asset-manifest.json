@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e99087ce.css",
+    "main.js": "/static/js/main.35d5fabf.js",
+    "static/js/787.01be8549.chunk.js": "/static/js/787.01be8549.chunk.js",
+    "static/media/A.jpg": "/static/media/A.7dcb3f10791fc652e221.jpg",
+    "static/media/404.png": "/static/media/404.e728252f865cf25a1501.png",
+    "static/media/london.jpeg": "/static/media/london.ec7853dbd1f81124adc4.jpeg",
+    "static/media/Poppins-Light.ttf": "/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
+    "static/media/Poppins-SemiBold.ttf": "/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
+    "static/media/contact.png": "/static/media/contact.9dce0c13bbd96f10f9ae.png",
+    "static/media/Tektur-SemiBold.ttf": "/static/media/Tektur-SemiBold.53e5aebb850e3e7b95f3.ttf",
+    "static/media/1.png": "/static/media/1.3f0f5561178aea013626.png",
+    "static/media/briefcasewhite.png": "/static/media/briefcasewhite.a253644352a9bbb87e95.png",
+    "static/media/padlockwhite.png": "/static/media/padlockwhite.787273845af9bc95b25d.png",
+    "static/media/hatwhite.png": "/static/media/hatwhite.88cadd717a909bff7049.png",
+    "static/media/twitter.png": "/static/media/twitter.c08f939e6ae8a4957431.png",
+    "static/media/briefcase.png": "/static/media/briefcase.c97e3f9e6fca86b39014.png",
+    "static/media/placeholder.png": "/static/media/placeholder.1113f1252a1946ff7e85.png",
+    "static/media/instagram.png": "/static/media/instagram.edb90ecc706a7a25542b.png",
+    "static/media/phone.png": "/static/media/phone.9cd037e2a1e211335bb3.png",
+    "static/media/hat.png": "/static/media/hat.ce367a2ddcf762bfa8ef.png",
+    "static/media/close.png": "/static/media/close.9546aea82ad69ecfc4d0.png",
+    "static/media/padlock.png": "/static/media/padlock.be1e0188930aa92cd755.png",
+    "static/media/open.png": "/static/media/open.16bd1faadd723bd54e01.png",
+    "static/media/trashwhite.png": "/static/media/trashwhite.36191e37b72339ab00b2.png",
+    "static/media/menu.png": "/static/media/menu.835fdacb0c2a7158b8c1.png",
+    "index.html": "/index.html",
+    "main.e99087ce.css.map": "/static/css/main.e99087ce.css.map",
+    "main.35d5fabf.js.map": "/static/js/main.35d5fabf.js.map",
+    "787.01be8549.chunk.js.map": "/static/js/787.01be8549.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e99087ce.css",
+    "static/js/main.35d5fabf.js"
+  ]
+}

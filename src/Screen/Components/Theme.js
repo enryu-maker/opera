@@ -44,8 +44,8 @@ export const SIZES = {
 };
 
 export const FONTS = {
-    largeTitle: { fontFamily: "SemiBold", fontSize: SIZES.largeTitle },
-    h1: { fontFamily: "SemiBold", fontSize: SIZES.h1,  fontWeight:'bold'},
+    largeTitle: { fontFamily: "Tektur-SemiBold", fontSize: SIZES.largeTitle },
+    h1: { fontFamily: "Tektur-SemiBold", fontSize: SIZES.h1,  fontWeight:'bold'},
     h2: { fontFamily: "SemiBold", fontSize: SIZES.h2, fontWeight:'bold'},
     h3: { fontFamily: "SemiBold", fontSize: SIZES.h3, fontWeight:'bold'},
     h4: { fontFamily: "SemiBold", fontSize: SIZES.h4, fontWeight:'bold'},
