@@ -247,7 +247,7 @@ export default function Home() {
                     textAlign:mobile?"left" : 'center',
                     letterSpacing: 2,
                 }}>
-                    For those reviewing this website as potential employees – do you want the opportunity to be part of our success? Browse through our pages, meet the team and search the recruitment page to see our current vacancies. You will find a wealth of information about the services we provide, ongoing and completed contracts.
+                    For those reviewing this website as potential employees - do you want the opportunity to be part of our success? Browse through our pages, meet the team and search the recruitment page to see our current vacancies. You will find a wealth of information about the services we provide, ongoing and completed contracts.
                 </p>
                 <p style={{
                     ...FONTS.body3,
