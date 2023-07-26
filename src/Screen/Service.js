@@ -126,7 +126,11 @@ export default function Service() {
                         alignItems: 'flex-start',
                         paddingInline: mobile ? 10 : 0,
                         width: mobile ? "" : "25%",
-                    }}>
+                    }}
+                    onClick={() => {
+                        window.open("https://www.developersplus.in")
+                    }}
+                    >
                         <img
                             alt='construction'
                             src={IMAGE.hatwhite} style={{
