@@ -146,6 +146,7 @@ export default function Home() {
 
                 >
                     <img
+                        loading='lazy'
                         alt='construction'
                         src={IMAGE.hat} style={{
                             width: 100,
@@ -170,6 +171,7 @@ export default function Home() {
                 >
                     <img
                         alt='briefcase'
+                        loading='lazy'
                         src={IMAGE.trash} style={{
                             width: 100,
                             height: 100,
@@ -193,6 +195,7 @@ export default function Home() {
                 >
                     <img
                         alt='padlock'
+                        loading='lazy'
                         src={IMAGE.padlock} style={{
                             width: 100,
                             height: 100,
@@ -214,6 +217,7 @@ export default function Home() {
                 >
                     <img
                         alt='trash'
+                        loading='lazy'
                         src={IMAGE.briefcase} style={{
                             width: 100,
                             height: 100,

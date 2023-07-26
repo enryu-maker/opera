@@ -29,7 +29,7 @@ export default function ProjectCard({
                 }}
         >
             <LazyLoadImage
-                src={IMAGE.A}
+                src={image}
                 placeholderSrc={IMAGE.close}
                 height={"100%"}
                 width={"100%"} 

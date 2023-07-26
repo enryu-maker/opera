@@ -132,7 +132,9 @@ export default function Contact() {
                             width: 20,
                             height: 20,
                             paddingInlineEnd: 10,
-                        }} />
+                        }}
+                        loading='lazy'
+                        />
                         <p style={{
                             ...FONTS.body3,
                             color: COLORS.black,
@@ -154,7 +156,10 @@ export default function Contact() {
                             width: 20,
                             height: 20,
                             paddingInlineEnd: 10,
-                        }} />
+                        }} 
+                        loading='lazy'
+                        
+                        />
                         <p style={{
                             ...FONTS.body3,
                             color: COLORS.black,
@@ -230,7 +235,9 @@ export default function Contact() {
                             width: 20,
                             height: 20,
                             paddingInlineEnd: 10,
-                        }} />
+                        }}
+                        loading='lazy'
+                        />
                         <p style={{
                             ...FONTS.body3,
                             color: COLORS.black,
@@ -252,7 +259,9 @@ export default function Contact() {
                             width: 20,
                             height: 20,
                             paddingInlineEnd: 10,
-                        }} />
+                        }}
+                        loading='lazy'
+                        />
                         <p style={{
                             ...FONTS.body3,
                             color: COLORS.black,
@@ -270,11 +279,13 @@ export default function Contact() {
                         alignItems: 'center',
 
                     }}>
-                        <img src={IMAGE.twitter} alt="twitter" style={{
+                        <img src={IMAGE.twitter}  alt="twitter" style={{
                             width: 20,
                             height: 20,
                             paddingInlineEnd: 10,
-                        }} />
+                        }} 
+                        loading='lazy'
+                        />
                         <p style={{
                             ...FONTS.body3,
                             color: COLORS.black,
@@ -296,7 +307,9 @@ export default function Contact() {
                             width: 20,
                             height: 20,
                             paddingInlineEnd: 10,
-                        }} />
+                        }} 
+                        loading='lazy'
+                        />
                         <p style={{
                             ...FONTS.body3,
                             color: COLORS.black,
@@ -319,6 +332,7 @@ export default function Contact() {
                 allowFullScreen=""
                 aria-hidden="false"
                 tabIndex="0"
+                loading='lazy'
             />
             <Footer />
         </div>

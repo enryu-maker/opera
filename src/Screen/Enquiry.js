@@ -85,6 +85,7 @@ export default function Enquiry() {
           width: mobile ? "100%" : "",
           objectFit: 'contain',
         }}
+        loading='lazy'
         />
         <div
           style={{
