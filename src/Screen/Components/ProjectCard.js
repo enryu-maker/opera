@@ -2,6 +2,7 @@ import React from 'react'
 import { COLORS, FONTS } from './Theme'
 import useMediaQuery from './useMediaQuery'
 import { IMAGE } from './Image';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 export default function ProjectCard({
     image = IMAGE.A,
     name = "PROJECT NAME",
@@ -27,15 +28,13 @@ export default function ProjectCard({
                 setHover(false)
                 }}
         >
-            <img
+            <LazyLoadImage
                 src={IMAGE.A}
-                alt="Project"
-                style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover',
-                }}
-            />
+                placeholderSrc={IMAGE.close}
+                height={"100%"}
+                width={"100%"} 
+                effect='blur'
+                />
             {
                 hover ?
                     <div style={{

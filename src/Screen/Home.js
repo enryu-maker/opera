@@ -50,6 +50,7 @@ export default function Home() {
                 justifyContent: 'center',
                 alignItems: 'center',
                 marginBlockStart: mobile ? 60 : 140,
+                transition: 'all 0.5s ease',
             }}
             >
 
