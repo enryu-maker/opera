@@ -140,10 +140,10 @@ export default function Home() {
                     flexDirection: 'column',
                     alignItems: 'center',
                     textDecoration: 'none',
+                    cursor: 'pointer',
 
                 }}
-                    href='/construction'
-
+                onClick={()=>window.open('https://developersplus.in/')}
                 >
                     <img
                         loading='lazy'
